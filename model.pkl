@@ -1,0 +1,11 @@
+import pickle
+from sklearn.ensemble import RandomForestClassifier
+
+# Train your model
+X_train, y_train = # Your training data
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+# Save the trained model
+with open('model.pkl', 'wb') as file:
+    pickle.dump(model, file)
